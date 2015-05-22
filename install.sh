@@ -110,7 +110,7 @@ echo "Checking flake8"
 if [ ! -e ~/.vim/bundle/flake8-vim ] ; then
 	cd ~/.vim/bundle
 	git clone --recursive --depth 1 https://github.com/andviro/flake8-vim.git
-	cp -rv ~/.vim/bundle/flake8-vim/ftplugin/ ~/.vim/ftplugin/
+	cp -rv ~/.vim/bundle/flake8-vim/ftplugin/ ~/.vim/
 fi
 
 echo "Checking vim-templates"
