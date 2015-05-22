@@ -113,6 +113,19 @@ if [ ! -e ~/.vim/bundle/flake8-vim ] ; then
 	cp -rv ~/.vim/bundle/flake8-vim/ftplugin/ ~/.vim/
 fi
 
+echo "Checking nerdtree"
+if [ ! -e ~/.vim/bundle/nerdtree ] ; then
+	cd ~/.vim/bundle
+	git clone --recursive --depth 1 https://github.com/scrooloose/nerdtree.git
+fi
+
+echo "Checking nerdtree-git-plugin"
+if [ ! -e ~/.vim/bundle/nerdtree-git-plugin ] ; then
+	cd ~/.vim/bundle
+	git clone --recursive --depth 1 https://github.com/Xuyuanp/nerdtree-git-plugin.git
+fi
+
+
 echo "Checking vim-templates"
 if [ ! -e ~/.vim/bundle/vim-templates ] ; then
 	cd ~/.vim/bundle
