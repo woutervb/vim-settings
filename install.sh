@@ -18,6 +18,18 @@ if [ ! -e ~/.vim/bundle/vim-wakatime ] ; then
 	git clone --depth 1 git://github.com/wakatime/vim-wakatime.git
 fi
 
+echo "Checking incsearch"
+if [ ! -e ~/.vim/bundle/incsearch.vim ] ; then
+	cd ~/.vim/bundle
+	git clone --depth 1 https://github.com/haya14busa/incsearch.vim.git
+fi
+
+echo "Checking speeddating"
+if [ ! -e ~/.vim/bundle/vim-speeddating ] ; then
+	cd ~/.vim/bundle
+	git clone --depth 1 https://github.com/tpope/vim-speeddating.git
+fi
+
 echo "Checking unimpaired"
 if [ ! -e ~/.vim/bundle/vim-unimpaired ] ; then
 	cd ~/.vim/bundle
