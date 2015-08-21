@@ -51,3 +51,8 @@ nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
+" YouCompleteMe
+let g:ycm_autoclose_preview_window_after_completion = 1
+
+" Default to gpg2
+let g:GPGExecutable = "gpg2"
